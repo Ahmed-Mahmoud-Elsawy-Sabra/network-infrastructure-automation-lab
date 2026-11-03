@@ -1,0 +1,10 @@
+[project]
+name = "network-infrastructure-automation-lab"
+version = "1.0.0"
+description = "Two-site enterprise network lab with Cisco configurations and Python automation"
+requires-python = ">=3.10"
+dependencies = ["netmiko>=4.4,<5.0", "PyYAML>=6.0,<7.0", "python-dotenv>=1.0,<2.0"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

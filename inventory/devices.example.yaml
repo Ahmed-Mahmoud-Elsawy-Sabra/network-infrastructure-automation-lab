@@ -1,0 +1,38 @@
+devices:
+  - name: HQ-R1
+    host: 127.0.0.1
+    port: 5001
+    device_type: cisco_ios
+    site: HQ
+    role: router
+    ping_targets:
+      - 10.20.10.1
+      - 10.20.20.1
+
+  - name: BR-R1
+    host: 127.0.0.1
+    port: 5002
+    device_type: cisco_ios
+    site: Branch
+    role: router
+    ping_targets:
+      - 10.10.10.1
+      - 10.10.20.1
+
+  - name: HQ-SW1
+    host: 127.0.0.1
+    port: 5003
+    device_type: cisco_ios
+    site: HQ
+    role: switch
+    ping_targets:
+      - 10.10.99.1
+
+  - name: BR-SW1
+    host: 127.0.0.1
+    port: 5004
+    device_type: cisco_ios
+    site: Branch
+    role: switch
+    ping_targets:
+      - 10.20.99.1
